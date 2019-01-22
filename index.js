@@ -45,14 +45,13 @@ function total() {
 }
 
 function removeFromCart(item) {
-  var unknownItemArray = [];
   for (var i = 0; i < cart.length; i++) {
     if (item === `${getCart()[i].itemName}`) {
       cart.splice(i, 1);
       return cart;
     }
   }
-  return "That item is not in your cart."
+  return "That item is not in your cart.";
 }
 
 function placeOrder(cardNumber) {
